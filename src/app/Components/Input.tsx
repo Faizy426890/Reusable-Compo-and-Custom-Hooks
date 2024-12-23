@@ -5,7 +5,8 @@ interface InputProps {
   value?: string, 
   onChange?:(e:React.ChangeEvent<HTMLInputElement>) => void, 
   className?: string, 
-  disabled?: boolean,
+  disabled?: boolean, 
+  dark?:true,
 }
 const Input : React.FC <InputProps> = ({  
     type = 'text',
@@ -13,16 +14,17 @@ const Input : React.FC <InputProps> = ({
     value,
     onChange,
     className = '',
-    disabled = false,
+    disabled = false, 
+    dark
 }) => {
   return (
-       <input 
-       type = {type}
+      <input 
+      type = {type}
       placeholder={placeholder}
       value={value}
       onChange={onChange}
       disabled={disabled}
-      className={`border px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 ${className}`}
+      className={`border ${dark ? 'text-gray-300' : 'text-gray-800'} border-gray-500 border-opacity-70 px-4 py-2 bg-transparent rounded-md   ${className}`}
     />
   )
 }

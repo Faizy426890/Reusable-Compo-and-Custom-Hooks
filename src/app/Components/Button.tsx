@@ -16,7 +16,7 @@ interface ButtonProps {
      <button 
       onClick={onClick} 
       disabled = {disabled} 
-      className= {`btn px-4 p-2 rounded-md transition duration-300 ${className}`}
+      className= {`btn px-4 p-2 rounded-md transition duration-200 ${className}`}
       > 
       {text}
      </button>

@@ -5,12 +5,12 @@ import Input from './Components/Input'
 // import Modal from './Components/Modal'
 function page() {
   return ( 
-    <div className='flex justify-center'>
+    <div className='flex justify-center '>
     <Button 
      text='Click Me' 
-     className='bg-gray-800 text-white hover:bg-gray-950 '  
+     className='bg-gray-800 h-10 text-white hover:bg-gray-950 '  
      />  
-     <Input /> 
+     <Input className='h-10'/> 
      {/* <Modal isOpen={true} title='Example' onClose={()=>{}} onConfirm={()=>{}}> 
        <p> This is the Description of Modal </p> 
      </Modal>     */}
